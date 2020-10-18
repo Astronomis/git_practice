@@ -42,6 +42,7 @@ customer_one_no_tax_total = customer_one_total
 customer_one_tax = customer_one_total * sales_tax
 customer_one_total += customer_one_tax
 
+#Print receipt
 print("Customer One Items:")
 for item in customer_one_itemization:
   print(item)
