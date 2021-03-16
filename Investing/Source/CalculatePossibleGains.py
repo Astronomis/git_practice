@@ -56,6 +56,9 @@ class Stock:
             interval += float(quarter_diff_value)
             stock_count = self.GetStockCount(self.investment, self.current_value)
             print( "    $" + str(interval) + " = $" + str(float(interval) * float(stock_count)))
+    23123
+    def GetStockGoal(self):
+        return (float(self.investment)/float(self.current_value))*float(goal_value)
 
 
 investment_amount = input("Investment: ")
@@ -78,3 +81,4 @@ print("Output Information:")
 print("  Shares        :  " + str(stock_count))
 print("")
 stock.GetStockSellPoints(current_value, goal_value, sell_point_count)
+goal_value = stock.GetStockGoal()
